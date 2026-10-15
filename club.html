@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinépolis - Club Cinépolis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0b2545;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffc807; 
+            margin: 0 0 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffc807;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: white;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .tarjeta-img {
+            margin-bottom: 15px;
+        }
+
+        .campo {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .campo label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .campo input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0b2545;
+            color: #ffc807;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #081b33;
+        }
+
+        footer {
+            background-color: #0b2545;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CINÉPOLIS</h1>
+        <nav>
+            <a href="index.html">Inicio</a> | 
+            <a href="registro.html">Registro</a> | 
+            <a href="club.html">Club Cinépolis</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Socio Club Cinépolis</h2>
+        <p>Ingresa los datos de tu tarjeta para consultar tus puntos y beneficios.</p>
+
+        <div class="tarjeta-img">
+            <img src="pendiente.png" alt="Tarjeta Club Cinépolis" width="200" height="120">
+        </div>
+
+        <form action="#" method="get">
+            
+            <div class="campo">
+                <label for="tarjeta">Número de Tarjeta (16 dígitos):</label>
+                <input type="text" id="tarjeta" name="tarjeta" placeholder="Ej. 1234 5678 9012 3456" maxlength="16" required>
+            </div>
+
+            <div class="campo">
+                <label for="nip">NIP o Contraseña:</label>
+                <input type="password" id="nip" name="nip" placeholder="Escribe tu NIP de 4 dígitos" maxlength="4" required>
+            </div>
+
+            <button type="submit">Ingresar a mi Cuenta</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Ramos Flores Pedro Alexis <br>5-i<br>0643</p>
+    </footer>
+
+</body>
+</html>
